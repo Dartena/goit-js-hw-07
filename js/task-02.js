@@ -6,10 +6,17 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-const ingredList = [];
-ingredients.forEach(ingredient => {
+
+const ingredList = ingredients.map(ingredient => {
   const listItem = document.createElement('li');
-  listItem.textContent = ingredient;
-  ingredList.push(listItem)
-});
+    listItem.textContent = ingredient;
+  return listItem;
+})
+
+// const ingredList = [];
+// ingredients.forEach(ingredient => {
+//   const listItem = document.createElement('li');
+//   listItem.textContent = ingredient;
+//   ingredList.push(listItem)
+// });
 document.getElementById('ingredients').append(...ingredList);
