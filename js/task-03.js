@@ -22,26 +22,3 @@ gallery.insertAdjacentHTML("beforeend", imgList);
 gallery.style.display = 'flex';
 gallery.style.flexWrap = 'wrap';
 console.log(imgList)
-
-
-
-
-
-
-
-
-
-
-
-// images.forEach(image => {
-//   const listItem = document.createElement('li');
-//   listItem.classList.add('gallery__item');
-//   const imgItem = document.createElement('img');
-//   imgItem.classList.add('gallery__image');
-//   imgItem.style.width = '1260px';
-//   imgItem.style.height = '750px';
-//   listItem.appendChild(imgItem);
-//   imgItem.src = image.url;
-//   imgItem.alt = image.alt;
-//   imgList.push(listItem.outerHTML);
-// });
